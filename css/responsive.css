@@ -1,0 +1,73 @@
+/* responsive css */
+@media (max-width: 1250px) {
+    .heroBtn .btn {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    nav.sticky {
+        padding: 0 5rem;
+        line-height: 8rem;
+        background-color: none;
+    }
+
+    nav.sticky .logo,
+    nav.sticky ul li a {
+        color: var(--textColor);
+    }
+
+    nav.sticky ul li a {
+        color: #fff;
+    }
+
+    nav.sticky .menu_btn i {
+        color: var(--textColor);
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: var(--secondaryColor);
+    }
+
+    nav {
+        padding: 0 5rem;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 8rem;
+        left: -100%;
+        background: var(--bgColor);
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        transition: all .5s ease;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+    .menu_btn i {
+        display: block;
+        margin-left: 73rem;
+    }
+
+    #check:checked~.menu_btn i::before {
+        content: "\f00d";
+    }
+
+    nav ul li {
+        margin: 1.5rem 0;
+    }
+
+    nav ul li a {
+        display: block;
+        font-size: 2rem;
+        transition: all 3s ease;
+    }
+
+}
